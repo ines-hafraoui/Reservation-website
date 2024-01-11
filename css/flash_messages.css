@@ -1,0 +1,33 @@
+.flash-message {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    border-radius: 4px;
+    animation: slide-in-out 0.5s ease-in-out;
+}
+
+.flash-message.success {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+.flash-message.error {
+    background-color: #DC2323;
+    color: #fff;
+}
+
+@keyframes slide-in-out {
+    0% {
+        transform: translateY(-100%);
+    }
+    10% {
+        transform: translateY(0);
+    }
+    90% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}

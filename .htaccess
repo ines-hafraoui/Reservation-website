@@ -1,0 +1,16 @@
+RewriteEngine on
+
+# If the request is a file, folder or symlink that exists, serve it up
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# redirect all api calls to /api/index.php, QSA to keep the query string parameter (GET)
+RewriteRule ^api/((?!index\.php$).+)$ api/index.php [L,NC,QSA]
+# custom rule, pour que vos differents repertoires api aient la reecriture d'URL
+RewriteRule ^Lise/api/((?!index\.php$).+)$ Lise/api/index.php [L,NC,QSA]
+
+<IfModule mod_headers.c>
+    Header always set Access-Control-Allow-Origin *
+    Header set Access-Control-Allow-Credentials true
+</IfModule>

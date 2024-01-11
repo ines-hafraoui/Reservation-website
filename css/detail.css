@@ -1,0 +1,39 @@
+.modify{
+    height: 1.5em;
+    margin-left: 0.5em;
+}
+
+h1{
+    display: inline-block;
+}
+h2{
+    display: inline-block;
+    margin-top: 0;
+}
+h4{
+    margin-bottom: 0.2em;
+}
+p {
+    display: inline;
+}
+
+.title{
+    text-align: center;
+}
+
+.infos{
+    margin-bottom: 4em;
+}
+
+#changePrblm{
+    margin-top: 1em;
+}
+.lesTab{
+    margin-bottom: 4em;
+}
+#addMat{
+    background-color: #1e88e5;
+}
+#addMat:hover{
+    background-color: #1D7ACC;
+}

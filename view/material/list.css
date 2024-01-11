@@ -1,0 +1,105 @@
+.material-menu ul{
+    display: flex;
+    margin: 1em;
+    justify-content: center;
+}
+
+li{
+    margin-left: 20px;
+}
+
+#delete-res{
+    background-color: #EE4646;
+    border-color: #EE4646;
+}
+
+#delete-res:hover{
+    background-color: #982e2e;
+    border-color: #982e2e;
+}
+
+#validate-reservation, #delete-res{
+    width: 15em;
+    padding: 5px;
+    align-self: center;
+    margin: 10px;
+}
+
+.input-res-container{
+    margin: 2em;
+}
+
+.material-card{
+    border: 1px solid black;
+    border-radius: 15px;
+    padding: 1em;
+    margin: 1em 2em;
+}
+
+
+/*FENETRE MODAL*/
+.date-res-container,
+.class-res-container,
+.member-res-container {
+    z-index: 2;
+    border: solid 1px black;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+}
+
+
+.date-res-container h2,
+.class-res-container h2,
+.member-res-container h2{
+    margin: 0 0 1em;
+}
+
+.date-res-container button,
+.class-res-container button,
+.member-res-container button{
+    margin: 10px;
+    padding: 5px;
+    background-color: #EE4646;
+    border-color: #EE4646;
+}
+
+.date-res-container button:hover,
+.class-res-container button:hover,
+.member-res-container button:hover{
+    background-color: #982e2e;
+    border-color: #982e2e;
+}
+
+
+.date-res-container div button,
+.class-res-container div button,
+.member-res-container div button{
+    background-color: #a6ce94;
+    border-color: #a6ce94;
+}
+
+.date-res-container div button:hover,
+.class-res-container div button:hover,
+.member-res-container div button:hover{
+    background-color: #719667;
+    border-color: #719667;
+}
+
+.black-background {
+    position: absolute;
+    z-index: 1;
+    background: rgba(0,0,0,0.7);
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
